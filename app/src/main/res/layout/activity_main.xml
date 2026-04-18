@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="⚔ Hero Academy Manager"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You are the Headmaster."
+        android:textSize="14sp"
+        android:textColor="#777777"
+        android:layout_marginBottom="32dp" />
+
+    <TextView
+        android:id="@+id/tvCounts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dorms: 0  |  Training: 0  |  Quest Board: 0"
+        android:textSize="15sp"
+        android:layout_marginBottom="40dp" />
+
+    <Button
+        android:id="@+id/btnRecruit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recruit Hero"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:id="@+id/btnDorms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go to Dorms"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:id="@+id/btnTraining"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go to Training Grounds"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:id="@+id/btnQuest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go to Quest Board" />
+
+</LinearLayout>

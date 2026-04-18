@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="📜 Quest Board"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Hero selection panel (shown before quest starts) -->
+    <LinearLayout
+        android:id="@+id/layoutSelection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Hero A:"
+            android:textSize="14sp" />
+
+        <Spinner
+            android:id="@+id/spinnerHeroA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Hero B:"
+            android:textSize="14sp" />
+
+        <Spinner
+            android:id="@+id/spinnerHeroB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnLaunchQuest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Launch Quest!" />
+
+    </LinearLayout>
+
+    <!-- Battle log scrollable text -->
+    <ScrollView
+        android:id="@+id/scrollBattleLog"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp"
+        android:background="#F8F8F8"
+        android:padding="4dp">
+
+        <TextView
+            android:id="@+id/tvBattleLog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select two heroes from the Quest Board and launch a quest!"
+            android:textSize="13sp"
+            android:padding="8dp"
+            android:fontFamily="monospace" />
+
+    </ScrollView>
+
+    <!-- Tactical combat buttons (hidden until quest is in progress) -->
+    <LinearLayout
+        android:id="@+id/layoutCombatActions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvCurrentTurn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hero A's turn — choose an action:"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="6dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnAttack"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Attack"
+                android:layout_marginEnd="2dp" />
+
+            <Button
+                android:id="@+id/btnDefend"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Defend"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="2dp" />
+
+            <Button
+                android:id="@+id/btnSpecial"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Special"
+                android:layout_marginStart="2dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

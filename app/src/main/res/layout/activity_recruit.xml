@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recruit a New Hero"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hero Name:"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etHeroName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter hero name"
+            android:inputType="text"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Class:"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupClass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp">
+
+            <RadioButton
+                android:id="@+id/radioWarrior"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🗡 Warrior  —  Skill: 6, Res: 4, HP: 100  |  Special: Shield Block"
+                android:layout_marginBottom="6dp" />
+
+            <RadioButton
+                android:id="@+id/radioMage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✨ Mage  —  Skill: 9, Res: 1, HP: 80  |  Special: Cast Spell"
+                android:layout_marginBottom="6dp" />
+
+            <RadioButton
+                android:id="@+id/radioArcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🏹 Archer  —  Skill: 7, Res: 2, HP: 90  |  Special: Shoot Arrow"
+                android:layout_marginBottom="6dp" />
+
+            <RadioButton
+                android:id="@+id/radioHealer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="💚 Healer  —  Skill: 5, Res: 3, HP: 110  |  Special: Heal Partner"
+                android:layout_marginBottom="6dp" />
+
+            <RadioButton
+                android:id="@+id/radioRogue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🗡 Rogue  —  Skill: 8, Res: 0, HP: 85  |  Special: Backstab" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnCreateHero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Hero"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancel" />
+
+    </LinearLayout>
+</ScrollView>
