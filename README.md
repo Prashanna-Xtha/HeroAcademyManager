@@ -70,7 +70,7 @@ For tactical combat the player can choose between Attack, Defend and Special eac
 ## UML Class Diagram
 -Created using Lucidchart.
 
-![UML Diagram](Hero UML.png)
+![UML Diagram](Hero_UML.png)
 
 ## App screens
 
